@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFFFFF;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.caja1w {
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 25px;
+  padding: 0.8px;
+  transition: ease 0.3s;
+  -webkit-animation: efecto 1.2s infinite;
+          animation: efecto 1.2s infinite;
+}
+.caja1w.hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.caja1w .boton {
+  width: 25px;
+  transition: ease 1s;
+}
+
+footer .bi {
+  color: black;
+  padding: 20px;
+  font-size: 20px;
+  transition: all ease-in-out 0.5s;
+}
+footer .bi::before {
+  transition: all ease-in-out 0.5s;
+}
+footer .bi:hover::before {
+  transform: scale(3);
+  color: rgba(243, 40, 13, 0.918);
+}
+
+.navbar .nav-link {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.603);
+}
+
+@-webkit-keyframes efecto {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes efecto {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    background-color: #FFFFFF;
+  }
+}/*# sourceMappingURL=estilos.css.map */
